@@ -1,0 +1,20 @@
+import pandas as pd
+series_fruits = pd. Series (["apple", "banana", "mango", "orange", "grapes"])
+print(series_fruits)
+print(series_fruits[0])
+print(series_fruits [3])
+salaries= pd. Series ([50000, 60000, 55000], index=["John", "Emma", "Ryan"])
+print(salaries)
+print(salaries ["Emma"])
+scores_dict={"Alex": 85, "Sophia": 92, "Michael": 78, "David": 88}
+scores = pd.Series (scores_dict)
+print(scores)
+print(scores["Michael"])
+marks = pd.Series ([60, 70, 80, 90])
+print("After adding bonus marks:", marks + 50)
+print("Average marks:", marks.mean())
+print("Total marks:", marks.sum())
+print("Highest mark:", marks.max())
+scores = pd.Series([90, 88, 75, 62],index=["Sophia", "David", "Emma", "Liam"])
+high_scorers = scores [scores > 85]
+print(high_scorers)
